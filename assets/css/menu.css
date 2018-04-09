@@ -1,0 +1,143 @@
+
+.glyphicon 
+{ 
+    margin-right:0px; 
+}
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+.dropbtn {
+    border: none;
+    height: 51px;
+    background-color: transparent;
+    font-family: 'ambleregular';
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    border-right: 1px solid #D4D4D4;
+    border-bottom: 1px solid #D4D4D4;
+    width: 160px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn:hover
+{
+    background: #f1f1f1 !important;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ebeced;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1100;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ffffff;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-left: 1px solid #D4D4D4;
+    margin-left: -1px;
+    border-bottom: 1px solid #D4D4D4;
+    min-width: 161px;
+}
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+.price-number
+{
+    margin-left: 0px;
+}
+.error{
+color: red;
+font-size: 13px;
+}
+#seller_submit:hover{
+background: linear-gradient(#337ab7 5%, #22abe9 100%);
+}

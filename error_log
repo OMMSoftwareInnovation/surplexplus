@@ -1,0 +1,2 @@
+[16-Feb-2018 08:16:13 America/Chicago] PHP Fatal error:  Call to undefined method Auctioncontroller::login() in /home/surplexplus/public_html/surplexplus/surplexplus/application/controllers/Auctioncontroller.php on line 197
+[18-Feb-2018 03:15:31 America/Chicago] PHP Fatal error:  Call to undefined method Auctioncontroller::login() in /home/surplexplus/public_html/surplexplus/surplexplus/application/controllers/Auctioncontroller.php on line 197

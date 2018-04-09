@@ -1,0 +1,64 @@
+.form-control
+{
+    box-shadow: 0 0px 1px rgba(0,0,0,.5);
+    border-radius: 0px;
+}
+a:focus, a:hover
+{
+    text-decoration: none;
+}
+.chkemail:focus
+{
+    border-color: #FF5722;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.validemail:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.alert-box 
+{   color:#555; 
+    box-shadow: 0 0px 2px rgba(0,0,0,.5); 
+    font-family:Tahoma,Geneva,Arial,sans-serif;
+    font-size:12px; 
+    padding:10px 10px 10px 36px; 
+    margin:10px; 
+} 
+.alert-box span 
+{   
+    font-weight:bold; 
+    text-transform:uppercase; 
+} 
+.error1 
+{ 
+    background:#ffecec; 
+    border:1px solid #f5aca6; 
+} 
+.success 
+{ 
+    background:#e9ffd9; 
+    border:1px solid #a6ca8a; 
+}
+#msgbx_err,#msgbx_err1,#msgbx_err2
+{ 
+    display: none; 
+}
+#msgbx_success
+{ 
+    display: none;
+}
+#chk_avail
+{
+    margin-left: 5px;
+}
+.modal-content
+{
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.16), 0 0px 5px 0 rgba(0,0,0,0.16);
+    border-radius: 0px;
+}
