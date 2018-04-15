@@ -14,7 +14,7 @@ class Auctioncontroller extends CI_Controller {
 	   $this->load->library('form_validation');
 	}
 
-	public function auction()
+	public function auction() 
 	{
 		$auction['auctions'] = $this->auctionmodel->liveauctions();
 	    $cnt=0;				
@@ -103,6 +103,7 @@ class Auctioncontroller extends CI_Controller {
 		$auction['auctions'] = $this->auctionmodel->closedauctions();
 	    $cnt=0;				
 
+            $data=array();
 	    for ($i=0; $i <count($auction['auctions']) ; $i++)
 	    {
 			$tt=explode(",", $auction['auctions'][$i]['id']);
@@ -130,7 +131,8 @@ class Auctioncontroller extends CI_Controller {
 			}
 	    }
 	     $dt['dt'][0]=$auction;
-	     $dt['dt'][1]=$data;
+	  
+             $dt['dt'][1]=$data;
 		// print_r($auction['auctions']);
 		// //print_r($dt);
 		// die();

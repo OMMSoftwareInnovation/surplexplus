@@ -293,7 +293,7 @@
 	<div class="col-md-12">
 
 		<div class="container">
-		    <div class="page-header" style="padding: 0px;margin: 0px; border: 1px solid #e2b8ba; box-shadow: 0px 0px 4px rgba(41,51,57,.5);">
+		    <div class="page-header" style="padding: 0px;margin:2px 105px 0px 3px; border: 1px solid #e2b8ba; box-shadow: 0px 0px 4px rgba(41,51,57,.5);">
 				<h3 id="" style="margin-top: 10px; margin-left: 20px;color: #cd1f25;">Industrial Auctions</h3>
 			</div>
 		</div>

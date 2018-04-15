@@ -1153,10 +1153,10 @@ class Sellercontroller extends CI_Controller {
 					$resp = $auction['products'][$j]['reserved_price'];
 					$mbid = $auction['products'][$j]['maxbid'];
 					$bcnt = $auction['products'][$j]['bidcount'];
-					$pid = $auction['products'][$j]['product_id'];
-					$bid = $auction['products'][$j]['buyer_id'];
-					$sid = $auction['products'][$j]['seller_id'];
-					$pname = $auction['products'][$j]['product_name'];
+					$pid  = $auction['products'][$j]['product_id'];
+					$bid  = $auction['products'][$j]['buyer_id'];
+					$sid  = $auction['products'][$j]['seller_id'];
+				  $pname  = $auction['products'][$j]['product_name'];
 
 					$data=array
 					(

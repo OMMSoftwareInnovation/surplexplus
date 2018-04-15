@@ -62,11 +62,11 @@
 .dropbtn {
     border: none;
     height: 51px;
-    background-color: transparent;
+    background-color: #ebeced;
     font-family: 'ambleregular';
-    font-size: 1em;
+    font-size: 0.823em;
     text-transform: uppercase;
-    color: #fff;
+    color: #221E20;
     border-right: 1px solid #D4D4D4;
     border-bottom: 1px solid #D4D4D4;
     width: 160px;

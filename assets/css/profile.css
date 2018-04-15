@@ -22,7 +22,7 @@
 .board > div.board-inner{
     background: #fafafa;
     background-size: 30%;
-    margin-top: -40px;
+    margin: -40px  98px -9px 0px
 }
 
 p.narrow{
@@ -156,6 +156,7 @@ li.active span.round-tabs.five{
 }
 
 .tab-content{
+    margin: 0px  88px 0px -10px;
 }
 .tab-pane{
    position: relative;

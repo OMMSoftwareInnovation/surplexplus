@@ -160,8 +160,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url('sellercontroller/addproduct'); ?>"><i class="fa fa-arrow-circle-right"></i> Add Product</a></li>
-            <li><a href="<?php echo site_url('sellercontroller/viewproduct'); ?>"><i class="fa fa-arrow-circle-right"></i> View Product</a></li>
+            <li><a href="<?php echo site_url('sellercontroller/addproduct'); ?>"><i class="fa fa-arrow-circle-right"></i> Add Item</a></li>
+            <li><a href="<?php echo site_url('sellercontroller/viewproduct'); ?>"><i class="fa fa-arrow-circle-right"></i> View Items</a></li>
           </ul>
         </li>
 

@@ -96,7 +96,7 @@
 					<?php
 						if ($this->session->userdata('username')) 
 						{
-					?>
+                                                    ?>
 					<form role="form" class="form-horizontal" method="post" action="<?php echo site_url('salecontroller/addorder'); ?>">
 						<input type="text" name="id" value="<?php echo $productdata[0]['product_id']; ?>" style="display: none;">
 						<input type="text" name="name" value="<?php echo $productdata[0]['product_name']; ?>" style="display: none;">
@@ -162,35 +162,37 @@
                       <table class="">
                         <tr>
                           <td class="td">Item Name</td>
-                          <td class="td1"><?php echo $productdata[0]['p_name']; ?></td>
+                          <td class="td1"><?php
+             
+                          echo $productdata[0]['product_name']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Manufacturer</td>
-                          <td class="td1"><?php echo $productdata[0]['p_manufacturer']; ?></td>
+                          <td class="td1"><?php // echo $productdata[0]['p_manufacturer']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Model/Type</td>
-                          <td class="td1"><?php echo $productdata[0]['p_model_type']; ?></td>
+                          <td class="td1"><?php // echo $productdata[0]['p_model_type']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Year of Manufacture</td>
-                          <td class="td1"><?php echo $productdata[0]['p_year_of_manufacture']; ?></td>
+                          <td class="td1"><?php // echo $productdata[0]['p_year_of_manufacture']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Machine Condition</td>
-                          <td class="td1"><?php echo $productdata[0]['p_machine_condition']; ?></td>
+                          <td class="td1"><?php // echo $productdata[0]['p_machine_condition']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Machine Location</td>
-                          <td class="td1"><?php echo $productdata[0]['p_machine_location']; ?></td>
+                          <td class="td1"><?php // echo $productdata[0]['p_machine_location']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Weight</td>
-                          <td class="td1"><?php echo $productdata[0]['p_weight_approx']; ?></td>
+                          <td class="td1"><?php // echo $productdata[0]['p_weight_approx']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Size/Dimensions</td>
-                          <td class="td1"><?php echo $productdata[0]['p_size_dimensions_approx']; ?></td>
+                          <td class="td1"><?php // echo $productdata[0]['p_size_dimensions_approx']; ?></td>
                         </tr>
                       </table>
 					</div>

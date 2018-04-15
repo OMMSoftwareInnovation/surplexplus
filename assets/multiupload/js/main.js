@@ -18,7 +18,7 @@ $(function () {
     $('#fileupload').fileupload({
         // Uncomment the following to send cross-domain cookies:
         //xhrFields: {withCredentials: true},
-        url: 'http://www.surplexplus.com/surplexplus/surplexplus/index.php/sellercontroller/multiupload',
+        url: 'http://localhost/surplex1/index.php/sellercontroller/multiupload',
         dataType: 'json',
         disableImageResize: false,
     imageMaxWidth: 500,

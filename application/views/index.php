@@ -19,10 +19,10 @@
                             </div>
                             <div class="col-md-7 index-ui5">
                                 <div class="index-ui6">
-                                    <p class="index-ui7"><a href="product1.html">Bargain Market Bargain Market</a></p>
-                                    <i class="index-ui8">388 Items</i>
+                                    <p class="index-ui7" style="padding-left: 12px;"><a href="product1.html">Bargain Market Bargain Market</a></p>
+                                    <i class="index-ui8"  style="padding-left: 13px;">388 Items</i>
                                     <br>
-                                    <i class="index-ui9">Ends on 24/10</i>
+                                    <i class="index-ui9"  style="padding-left: 12px;">Ends on 24/10</i>
                                  </div>
                             </div>
                          </div>
@@ -33,10 +33,10 @@
                             </div>
                             <div class="col-md-7 index-ui5">
                                 <div class="index-ui6">
-                                    <p class="index-ui7"><a href="product1.html">Bargain Market Bargain Market</a></p>
-                                    <i class="index-ui8">388 Items</i>
+                                    <p class="index-ui7" style="padding-left: 12px;"><a href="product1.html">Bargain Market Bargain Market</a></p>
+                                    <i class="index-ui8"  style="padding-left: 13px;">388 Items</i>
                                     <br>
-                                    <i class="index-ui9">Ends on 24/10</i>
+                                    <i class="index-ui9"  style="padding-left: 12px;">Ends on 24/10</i>
                                  </div>
                             </div>
                          </div>
@@ -117,13 +117,13 @@
             <h3 class="index-h2">For Sale</h3>
             </div>
             <div class="see">
-                <p><a href="#">See all Products</a></p>
+                <p><a href="product.html">See all Products</a></p>
             </div>
             <div class="clear"></div>
         </div>
           <div class="section group">
-                <div class="col-md-3 col-sm-3 col-xs-3">
-                     <a href="#"><img class="img-responsive" src="<?=base_url();?>assets/images/pic1.jpg" alt="" />
+                <div class="grid_1_of_4 images_1_of_4">
+                     <a href="preview1.html"><img src="<?php echo base_url(); ?>assets/images/pic1.jpg" alt="" />
                      <h2>Lorem Ipsum is simply </h2>
                      </a>
                     <div class="price-details">
@@ -133,8 +133,8 @@
                         <div class="clear"></div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-3">
-                    <a href="#"><img class="img-responsive" src="<?=base_url();?>assets/images/pic2.jpg" alt="" /></a>
+                <div class="grid_1_of_4 images_1_of_4">
+                    <a href="#"><img src="<?php echo base_url(); ?>assets/images/pic2.jpg" alt="" /></a>
                      <h2>Lorem Ipsum is simply </h2>
                     <div class="price-details">
                        <div class="price-number">
@@ -144,8 +144,8 @@
                     </div>
                     
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-3">
-                    <a href="#"><img class="img-responsive" src="<?=base_url();?>assets/images/pic3.jpg" alt="" /></a>
+                <div class="grid_1_of_4 images_1_of_4">
+                    <a href="preview2.html"><img src="<?php echo base_url(); ?>assets/images/pic3.jpg" alt="" /></a>
                      <h2>Lorem Ipsum is simply </h2>
                      <div class="price-details">
                        <div class="price-number">
@@ -154,8 +154,8 @@
                         <div class="clear"></div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-3">
-                    <a href="#"><img class="img-responsive" src="<?=base_url();?>assets/images/pic4.jpg" alt="" /></a>
+                <div class="grid_1_of_4 images_1_of_4">
+                    <a href="#"><img src="<?php echo base_url(); ?>assets/images/pic4.jpg" alt="" /></a>
                      <h2>Lorem Ipsum is simply </h2>
                     <div class="price-details">
                        <div class="price-number">

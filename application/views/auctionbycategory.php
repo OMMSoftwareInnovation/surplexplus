@@ -3,6 +3,11 @@
 {
     background-color: #f1f1f1 !important;
 }
+.thumbnail
+{
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
 </style><style type="text/css">
         
             .dropdown-submenu {
@@ -53,8 +58,9 @@
                 border-radius: 6px 0 6px 6px;
             }
               .thumbnail:hover{
-   opacity: 1;
-    box-shadow: 0px -1px 12px 3px #d4d4d4;
+   /*opacity: 1;
+    box-shadow: 0px -1px 12px 3px #d4d4d4;*/
+    box-shadow: 0 3px 10px rgba(41,51,57,.55);
   }
   .item.list-group-item {
     float: none;
@@ -136,12 +142,22 @@
           ?>
           	<a href="<?php echo site_url('auctioncontroller/auctionproduct') ?>/<?php echo $items[$i]['auction_item_id'] ?>">
       	        <div class="item  col-xs-4 col-lg-4" style="width: 33.333333%;">
-      	            <div class="thumbnail" style="box-shadow: 0 1px 4px rgba(41,51,57,.5);">
+      	            <div class="thumbnail" >
       	                <img class="group list-group-image" src="<?php echo base_url(); ?>/files/<?php echo $items[$i]['product_main_img'] ?>" onMouseOver="this.setAttribute('src', '<?php echo base_url(); ?>/files/<?php echo $mm; ?>');" onMouseOut="this.setAttribute('src', '<?php echo base_url(); ?>/files/<?php echo $items[$i]['product_main_img'] ?>');" alt="" />
                         
       	                <div class="caption">
       	                    <h4 class="group inner list-group-item-heading" style="font-size: 13px; font-family: Verdana,Arial,Helvetica,sans-serif;">
-      	                        <?php echo $items[$i]['product_name']; ?></h4>
+      	                        <?php  
+                                $length=strlen($items[$i]['product_name']);
+                                            if ($length>35)
+                                            {
+                                               // echo word_limiter($name, 4);
+                                                echo substr($items[$i]['product_name'],0,40)."...";
+                                            }
+                                            else
+                                            {
+                                                echo $items[$i]['product_name'];
+                                            }?></h4>
       	                    <hr style="margin-top: 0px;margin-bottom: 0px;">
       	                    <div class="row">
                                 <?php
