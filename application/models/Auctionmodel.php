@@ -45,7 +45,6 @@ class Auctionmodel extends CI_Model
         $this->db->GROUP_BY('DATE(surplex_auction.auction_ed_time)');
         $query = $this->db->get();
         return $query->result_array();
-
         // $sql = "SELECT *,count(*) as cnt FROM surplex_auction WHERE auction_status ='3'  GROUP BY DATE(auction_st_time) ";$query= $this->db->query($sql);
         // return $query->result_array();
         // $this->db->where(' TIME(surplex_auction.auction_ed_time) < NOW()  ');

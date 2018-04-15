@@ -2,9 +2,18 @@
 .ab:hover
 {
     background-color: #f1f1f1 !important;
-}.thumbnail
+}
+.thumbnail
 {
-    min-height: 275px;
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+.lead
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}.list-group-item-heading
+{
+    min-height: 30px;
 }
 </style>
 <style type="text/css">
@@ -66,10 +75,12 @@
                 -moz-border-radius: 6px 0 6px 6px;
                 border-radius: 6px 0 6px 6px;
             }
-              .thumbnail:hover{
-   opacity: 1;
-    box-shadow: 0px -1px 12px 3px #d4d4d4;
-  }
+.thumbnail:hover
+{
+/*opacity: 1;
+box-shadow: 0px -1px 12px 3px #d4d4d4;*/
+box-shadow: 0 3px 10px rgba(41,51,57,.55);
+}
   .item.list-group-item {
     float: none;
     width: 96.2%;

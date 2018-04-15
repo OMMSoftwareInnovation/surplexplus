@@ -54,7 +54,7 @@ class Salemodel extends CI_Model
         $this->db->where('product_price != "no"');
         $this->db->where('product_status','2');
         $this->db->limit($ed,$st);
-        $this->db->order_by('product_name','asc');
+        $this->db->order_by('product_name','desc');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -223,6 +223,19 @@ class Salemodel extends CI_Model
         return $query->result_array();
     }
 
+
+    public function product_manufacturer($id){
+        $this->db->select('s.seller_name');
+        $this->db->from('products as p');
+        $this->db->join('surplex_seller as s','p.seller_id=s.seller_id');
+        $this->db->where('product_id',$id);
+        $query = $this->db->get();
+        return $query->result_array();
+
+
+
+        
+    }
     public function seller_login($username,$password)
     {
         $this->db->select('*');

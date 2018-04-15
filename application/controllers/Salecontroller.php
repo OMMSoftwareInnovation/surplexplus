@@ -149,9 +149,9 @@ class Salecontroller extends CI_Controller {
 	public function pricedsaleproduct()
 	{
 		$id=$this->uri->segment(3);
-		$product['productdata'] = $this->salemodel->pricedsaleproduct($id);
-		$product['relateddata'] = $this->salemodel->relatedproduct($product['productdata'][0]['product_category_id']);
-
+		$product['productdata']=$this->salemodel->pricedsaleproduct($id);
+		$product['relateddata']=$this->salemodel->relatedproduct($product['productdata'][0]['product_category_id']);
+		// print_r($product['relateddata']);
 		$this->load->view('header');
 		$this->load->view('pricedsaleproduct',$product);
 		$this->load->view('footer');
@@ -210,9 +210,8 @@ class Salecontroller extends CI_Controller {
 		$id=$this->uri->segment(3);
 		$product['productdata']=$this->salemodel->pricedsaleproduct($id);
 		$product['relateddata']=$this->salemodel->relatedproduct($product['productdata'][0]['product_category_id']);
-		
-		// echo "<pre>";
-		// print_r($product['productdata']); die;
+		$product['p_seller']=$this->salemodel->product_manufacturer($id);
+		 print_r($product['productdata']);
 
 		$this->load->view('header');
 		$this->load->view('onrequestsaleproduct',$product);

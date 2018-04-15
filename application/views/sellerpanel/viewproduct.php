@@ -24,7 +24,7 @@ echo $notify;
               	</div>
               	<div class="col-md-2">
                   <a href="<?php echo site_url('sellercontroller/addproduct'); ?>">
-                    <button type="button" class="btn btn-block btn-primary btn-flat"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Add New Product
+                    <button type="button" class="btn btn-block btn-primary btn-flat"><i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Add New Item
                     </button>
                   </a>
               	</div>

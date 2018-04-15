@@ -13,7 +13,7 @@
     background: currentColor;
     top: 0px;
     bottom: 0px;
-    margin-left: 59px;
+    margin-left: 34px;
 }
 
 .timeline .separator {
@@ -29,7 +29,8 @@
 
 .timeline .panel {
     position: relative;
-    margin: 10px 0px 21px 82px;
+    /*margin: 10px 0px 21px 82px;*/
+       margin: 3px 108px 74px 59px;
     clear: both;
 }
 .timeline .panel .panel-heading.icon * { font-size: 20px; vertical-align: middle; line-height: 40px; }
@@ -293,7 +294,8 @@
 	<div class="col-md-12">
 
 		<div class="container">
-		    <div class="page-header" style="padding: 0px;margin: 0px; border: 1px solid #e2b8ba; box-shadow: 0px 0px 4px rgba(41,51,57,.5);">
+                    
+		    <div class="page-header" style="padding: 0px;margin: 0px; width: 90%; border: 1px solid #e2b8ba; box-shadow: 0px 0px 4px rgba(41,51,57,.5);">
 				<h3 id="" style="margin-top: 10px; margin-left: 20px;color: #cd1f25;">Industrial Auctions</h3>
 			</div>
 		</div>

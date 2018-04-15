@@ -159,7 +159,7 @@
                       <table class="">
                         <tr>
                           <td class="td">Item Name</td>
-                          <td class="td1"><?php echo $productdata[0]['p_name']; ?></td>
+                          <td class="td1"><?php echo $productdata[0]['product_name']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Manufacturer</td>
@@ -167,18 +167,18 @@
                         </tr>
                         <tr>
                           <td class="td">Model/Type</td>
-                          <td class="td1"><?php echo $productdata[0]['p_model_type']; ?></td>
+                          <td class="td1"><?php echo $productdata[0]['product_type']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Year of Manufacture</td>
                           <td class="td1"><?php echo $productdata[0]['p_year_of_manufacture']; ?></td>
                         </tr>
                         <tr>
-                          <td class="td">Item Condition</td>
+                          <td class="td">Machine Condition</td>
                           <td class="td1"><?php echo $productdata[0]['p_machine_condition']; ?></td>
                         </tr>
                         <tr>
-                          <td class="td">Item Location</td>
+                          <td class="td">Machine Location</td>
                           <td class="td1"><?php echo $productdata[0]['p_machine_location']; ?></td>
                         </tr>
                         <tr>
@@ -208,7 +208,7 @@
    </script>		
    <div class="content_bottom" style="padding: 0px;">
     		<div class="heading" style="text-align: center;float: none;">
-    		<h3 style="margin-top: 9px;padding: 6px;">Related Items</h3>
+    		<h3 style="margin-top: 9px;padding: 6px;">Related Products</h3>
     		</div>
     		<div class="clear"></div>
     	</div>

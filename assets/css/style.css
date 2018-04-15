@@ -44,27 +44,25 @@ body {
 	background: #FFF;
 }
 .headertop_desc{
-	border-bottom: 1px solid #EEE;
-    background: #b81d22;
-    color: #fff;
-    padding: 10px;
-    /* height: 32px; */
+	border-bottom:1px solid #EEE;
+	padding: 5px;
+	height: 32px;
 }
 .call{
 	float:left;
 }
 .call p{
 	font-size:0.9em;
-	/*color:#9C9C9C;*/
+	color:#9C9C9C;
 }
 .call p span{
-	/*color:#303030;*/
+	color:#303030;
 	font-size:1em;
 	font-weight:bold;
 }
 .call p span.number{
-	/*color:#E4292F;*/
-	/*font-size:1em;*/
+	color:#E4292F;
+	font-size:1em;
 	letter-spacing:1px;
 }
 .account_desc{
@@ -290,11 +288,11 @@ body {
 .content h2 {
 	color: #383838;
 	margin-bottom: 0.5em;
-	font-size: 1em;
-	line-height: 1;
+	font-size: 1.5em;
+	line-height: 1.2;
 	font-family: 'ambleregular';
 	font-weight: normal;
-	margin-top: 10px;
+	margin-top: 0px;
 	text-transform: uppercase;
 }
 .content_top{
@@ -379,7 +377,7 @@ body {
 	margin-left: 17px;
 }
 .price-details p span.rupees{
-	font-size:1em;
+	font-size:1.6em;
 	font-family: 'ambleregular';
 	color:#383838;
 }
@@ -1219,7 +1217,7 @@ body {
 .section {
 	clear: both;
 	padding: 0px;
-	margin: 15px 0;
+	margin: 0px;
 }
 .group:before, .group:after {
 	content: "";

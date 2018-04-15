@@ -103,18 +103,18 @@
                     </div>
                 </div>
 
-                <div class="row">
+              <!--   <div class="row">
                   <div class="form-group col-md-12" id="">
                     <label>Summary <span style="color:red">*</span></label>
                     <textarea placeholder="Place some text here" id="product_summary" style="min-width: 100%;max-width: 100%;min-height: 100px; max-height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                   </div>
                 </div>
-
-                <input type="button" name="password" class="next1 btn btn-info col-md-2" value="Next" id="password" disabled=""> &nbsp;
+ -->
+                <input type="button" name="password" class="next1 btn btn-info col-md-2" value="Next" id="password" > &nbsp;
                 <!-- <a href="viewproduct"> -->
                   <input type="button" id="" style="margin-left: 2%;" class="cancel btn btn-warning col-md-2" value="Cancel">
                 <!-- </a> -->
-                <span style="color:red;margin-left:  28.4%;font-style: italic;letter-spacing: 1px;font-weight: bold;">(The fields marked with an asterisk (*) are mandatory.)</span>
+                <!-- <span style="color:red;margin-left:  28.4%;font-style: italic;letter-spacing: 1px;font-weight: bold;">(The fields marked with an asterisk (*) are mandatory.)</span> -->
               </fieldset>
 
               <fieldset>
@@ -203,7 +203,7 @@
                 <input type="button" name="previous" style="float: left;" class="previous btn btn-default" value="Previous" />
                 <input type="button" name="password" style="margin-left: 2%;" class="next btn btn-info col-md-2" value="Next" id="password" disabled=""> &nbsp;
                   <input type="button" id="" style="margin-left: 2%;" class="cancel btn btn-warning col-md-2" value="Cancel">
-                <span style="color:red;margin-left:  19.16%;font-style: italic;letter-spacing: 1px;font-weight: bold;">(The fields marked with an asterisk (*) are mandatory.)</span>
+                <!-- <span style="color:red;margin-left:  19.16%;font-style: italic;letter-spacing: 1px;font-weight: bold;">(The fields marked with an asterisk (*) are mandatory.)</span> -->
               </fieldset>
 
               <fieldset>
@@ -232,9 +232,9 @@
                             </span>
                             <button type="submit" class="btn btn-primary start" disabled="disabled" id="qwe">
                                 <i class="glyphicon glyphicon-upload"></i>
-                                <span>Upload all</span>
+                                <span>Upload All</span>
                             </button>
-                            <button type="button" class="btn btn-danger deleteall" disabled="disabled">
+                            <button type="button" class="btn btn-danger deleteall">
                                 <i class="glyphicon glyphicon-trash"></i>
                                 <span>Delete</span>
                             </button>
@@ -256,7 +256,7 @@
                 </form>
 
                 <input type="button" name="previous" class="previous btn btn-default" value="Previous" />
-                <input type="submit"   id="submit" name="submit" class="submit btn btn-success" value="Submit" />
+                <input type="submit"   id="submit" name="submit" class="submit btn btn-success" value="Submit"  disabled="disabled"/>
                   <input type="button" id="" style="float: right;" class="cancel btn btn-warning col-md-2" value="Cancel">
               </fieldset>
               
