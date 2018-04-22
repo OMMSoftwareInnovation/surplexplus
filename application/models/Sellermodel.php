@@ -661,4 +661,31 @@ class Sellermodel extends CI_Model
         return $query;
     }
 
+     public  function getCountries() {
+        $this->db->select('id,name');
+        $this->db->from('countries');
+        $query= $this->db->get();
+       return $query->result_array();
+   }
+
+  // Fetch all states list by country id
+  public  function getStates() {
+        $this->db->select('id,name,country_id');
+       $this->db->from('states');
+       //$this->db->where('country_id',$countryId);
+       $query= $this->db->get();
+       return $query->result_array();
+   
+   }
+
+ // Fetch all cities list by state id
+  public function getCities() {
+       $this->db->select('id,name,state_id');
+       $this->db->from('cities');
+      // $this->db->where('state_id',$stateId);
+       $query= $this->db->get();
+       return $query->result_array();
+      }
+
+
 }

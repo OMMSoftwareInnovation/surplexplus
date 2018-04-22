@@ -102,6 +102,8 @@
                       <input type="text" class="form-control" name="subcatotherinfo" id="subcatotherinfo" placeholder="Enter Information">
                     </div>
                 </div>
+                
+               
 
               <!--   <div class="row">
                   <div class="form-group col-md-12" id="">
@@ -155,16 +157,53 @@
 
                 <div class="row">
                     <div class="form-group col-md-6">
-                      <label for="machine_condi">Machine Condition <span style="color:red">*</span></label>
+                      <label for="machine_condi">Item Condition <span style="color:red">*</span></label>
                       <input type="text" class="form-control" name="machine_condi" id="machine_condi" placeholder="Enter ">
                     </div>
 
                     <div class="form-group col-md-6">
-                      <label for="machine_loc">Machine Location <span style="color:red">*</span></label>
+                      <label for="machine_loc">Item Location <span style="color:red">*</span></label>
                       <input type="text" class="form-control" name="machine_loc" id="machine_loc" placeholder="Enter ">
                     </div>
                 </div>
-                
+               <!-- //cities -->
+              <div class="row">
+                  <div class="form-group col-md-6">
+                    <select name="country" class="countries form-control" id="countryId">
+                        <option value="">Select Country</option>
+                        <?php foreach ($countries as  $value) {
+                          # code...
+                       echo "<option value='".$value['id']."'>".$value['name']."</option>";
+                          
+                        }?>
+
+                    </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <select name="state" class="states form-control" id="stateId">
+                        <option value="">Select State</option>
+                       <?php foreach ($state as  $st) {
+                          # code...
+                       echo "<option value='".$st['id']."'>".$st['name']."</option>";
+                          
+                        }?>
+
+                    </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <select name="city" class="cities form-control" id="cityId">
+                        <option value="">Select City</option>
+                     <?php foreach ($city as  $ct) {
+                          # code...
+                       echo "<option value='".$ct['id']."'>".$ct['name']."</option>";
+                          
+                        }?>
+
+                    </select>
+                    </div>
+
+                </div>
+
                 <div class="row">
                     <div class="pad margin no-print">
                       <div class="callout callout-success" style="margin-bottom: 0!important;border-color: #00c0ef;background-color: #3c8dbc !important;">
@@ -432,6 +471,7 @@ $(document).ready(function()
 <script src="<?php echo base_url() ?>assets/multiupload/js/jquery.fileupload-ui.js"></script>
 <!-- The main application script -->
 <script src="<?php echo base_url() ?>assets/multiupload/js/main.js"></script>
+<!-- <script src="<?php// echo base_url() ?>assets/js/location.js"></script> -->
 
 <script>
  function abc(aa)

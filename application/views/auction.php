@@ -344,7 +344,7 @@
                             <h3 class="title"><?php echo $dt[1][$i][$j][0]['auction_title']; ?></h3>
                             <p class="desc"><?php 
                             $date = date_create($dt[1][$i][$j][0]['auction_ed_time']);
-                            echo   "<i class='fa fa-clock-o' style='font-size: 18px;color:#cd1f25'></i> End Time: ".date_format($date, 'Y/m/d H:i:s') ; 
+                            echo   "<i class='fa fa-clock-o' style='font-size: 18px;color:#cd1f25'></i> End Time: ".date_format($date, 'd/m/Y H:i:s') ; 
                             $dat = date_create($dt[1][$i][$j][0]['auction_st_time']);
                             $cate = date_create(date('Y/m/d H:i:s', time()));
                             $A = $dt[1][$i][$j][0]['auction_st_time'];

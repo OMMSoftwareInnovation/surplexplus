@@ -18,7 +18,6 @@ class Salecontroller extends CI_Controller {
 	public function saleproductlist()
 	{
 		$perpage="12";
-
 	 	$this->load->model("salemodel", "menu");
 		$items = $this->menu->all();
 		$this->load->library("multi_menu");

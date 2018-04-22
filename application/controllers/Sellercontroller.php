@@ -55,8 +55,12 @@ class Sellercontroller extends CI_Controller {
 		else
 		{
 			$product['category'] = $this->sellermodel->category();
-			// print_r($product['category']);
-			// die();
+			$product['countries']=$this->sellermodel->getCountries();
+			$product['states']=$this->sellermodel->getStates();
+			$product['cities']=$this->sellermodel->getCities();
+		// echo "<pre>";	
+		// 	 print_r($product['states']);
+		// 	 die();
 			$this->load->view('sellerpanel/header');
 			$this->load->view('sellerpanel/addproduct',$product);
 		}
@@ -1195,4 +1199,42 @@ class Sellercontroller extends CI_Controller {
 		}
 	}
 
+public function api(){
+header("Access-Control-Allow-Origin: *");
+header('Content-Type: application/json');
+include_once("classes/location.php");
+
+$loc = new location();			
+
+try {
+  if(!isset($_GET['type']) || empty($_GET['type'])) {
+  	throw new exception("Type is not set.");
+  }
+  $type = $_GET['type'];
+  if($type=='getCountries') {
+  	$data = $loc->getCountries();
+  } 
+
+  if($type=='getStates') {
+  	 if(!isset($_GET['countryId']) || empty($_GET['countryId'])) {
+  	 	throw new exception("Country Id is not set.");
+  	 }
+  	 $countryId = $_GET['countryId'];
+  	 $data = $loc->getStates($countryId);
+  }
+
+   if($type=='getCities') {
+  	 if(!isset($_GET['stateId']) || empty($_GET['stateId'])) {
+  	 	throw new exception("State Id is not set.");
+  	 }
+     $stateId = $_GET['stateId'];
+  	 $data = $loc->getCities($stateId);
+  }
+
+} catch (Exception $e) {
+   $data = array('status'=>'error', 'tp'=>0, 'msg'=>$e->getMessage());
+} finally {
+  echo json_encode($data);
+}
+}
 }

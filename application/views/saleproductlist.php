@@ -139,6 +139,7 @@ box-shadow: 0 3px 10px rgba(41,51,57,.55);
 		    </div>
     
 		    <div id="products" class="row list-group">
+            
             </div>
     <div class="ajax-load text-center" style="display:none;border-radius: 2px;letter-spacing: 1px;font-family: 'ambleregular';font-size: 15px;">
     <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading More Products</p>
