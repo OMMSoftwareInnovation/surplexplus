@@ -66,7 +66,7 @@
                                             if ($product[$i]['product_type'] == '1') 
                                             {
                                                 echo "<h4 class='lead'>";
-                                                echo "Rs. ".$product[$i]['product_price'];
+                                                echo "₹  ".$product[$i]['product_price'];
                                                 echo "</h4>";
                                             }
                                             ?>

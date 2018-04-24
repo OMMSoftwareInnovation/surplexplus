@@ -168,31 +168,31 @@
                         </tr>
                         <tr>
                           <td class="td">Manufacturer</td>
-                          <td class="td1"><?php // echo $productdata[0]['p_manufacturer']; ?></td>
+                          <td class="td1"><?php  echo $productdata[0]['p_manufacturer']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Model/Type</td>
-                          <td class="td1"><?php // echo $productdata[0]['p_model_type']; ?></td>
+                          <td class="td1"><?php  echo $productdata[0]['p_model_type']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Year of Manufacture</td>
-                          <td class="td1"><?php // echo $productdata[0]['p_year_of_manufacture']; ?></td>
+                          <td class="td1"><?php  echo $productdata[0]['p_year_of_manufacture']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Machine Condition</td>
-                          <td class="td1"><?php // echo $productdata[0]['p_machine_condition']; ?></td>
+                          <td class="td1"><?php  echo $productdata[0]['p_machine_condition']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Machine Location</td>
-                          <td class="td1"><?php // echo $productdata[0]['p_machine_location']; ?></td>
+                          <td class="td1"><?php  echo $productdata[0]['p_machine_location']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Weight</td>
-                          <td class="td1"><?php // echo $productdata[0]['p_weight_approx']; ?></td>
+                          <td class="td1"><?php  echo $productdata[0]['p_weight_approx']; ?></td>
                         </tr>
                         <tr>
                           <td class="td">Size/Dimensions</td>
-                          <td class="td1"><?php // echo $productdata[0]['p_size_dimensions_approx']; ?></td>
+                          <td class="td1"><?php  echo $productdata[0]['p_size_dimensions_approx']; ?></td>
                         </tr>
                       </table>
 					</div>
@@ -221,16 +221,9 @@
 
 </style>
 <div class="section group">
-
-
-
-
-
 	  <div class="col-md-12">
         <div class="carousel slide" id="myCarousel">
           <div class="carousel-inner">
-
-
           	<?php
                   $cnt=0;
                   $abc="";

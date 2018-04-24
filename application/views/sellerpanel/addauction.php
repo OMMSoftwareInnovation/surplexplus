@@ -71,9 +71,11 @@
                           <label for="exampleInputFile">Upload Auction Image </label>
                           <input type="file" id="file" name="file">
                       </div>
-
-                      <button type="submit" id="uploadimage" style="font-size: 16px;letter-spacing: 1px;" class="btn btn-primary btn-flat col-md-12">Submit</button>
-                      <span style="color:red;margin-left: 64%;font-style: italic;letter-spacing: 1px;font-weight: bold;">(The fields marked with an asterisk (*) are mandatory.)</span>
+                       <div class="form-group col-md-12" style="text-align: center;">
+                     
+                      <button type="submit" id="uploadimage" style="font-size: 16px;letter-spacing: 1px;" class="btn btn-primary btn-flat">Submit</button>
+                      </div>
+                  <!--     <span style="color:red;margin-left: 64%;font-style: italic;letter-spacing: 1px;font-weight: bold;">(The fields marked with an asterisk (*) are mandatory.)</span> -->
                   </div>
                 </form>
 
