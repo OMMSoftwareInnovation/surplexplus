@@ -210,7 +210,7 @@ class Salecontroller extends CI_Controller {
 		$product['productdata']=$this->salemodel->pricedsaleproduct($id);
 		$product['relateddata']=$this->salemodel->relatedproduct($product['productdata'][0]['product_category_id']);
 		$product['p_seller']=$this->salemodel->product_manufacturer($id);
-		 print_r($product['productdata']);
+	//	 print_r($product['productdata']);
 
 		$this->load->view('header');
 		$this->load->view('onrequestsaleproduct',$product);
@@ -238,36 +238,69 @@ class Salecontroller extends CI_Controller {
 	public function addorder()
 	{
 
-
-// 			$config = Array(
-// 		    'protocol' => 'smtp',
-// 		    'smtp_host' => 'ssl://smtp.googlemail.com',
-// 		    'smtp_port' => 465,
-// 		    'smtp_user' => 'dudhiyamurtaza165@gmail.com',
-// 		    'smtp_pass' => 'dudhiya6596',
-// 		    'mailtype'  => 'html',
-// /*		    'ssl' => array(
-// 'verify_peer' => false,
-// 'verify_peer_name' => false,
-// 'allow_self_signed' => true
-// )*/
+	//	print_r($_POST);
+		$detail=$this->salemodel->product_manufacturer($this->input->post('id'));
+		$uname=$this->session->userdata('username');
+		$uid=$this->session->userdata('id');
+		$utype=$this->session->userdata('type');
+			$pname=$this->input->post('name');	
+//print_r($detail);
+//die;
+			$config = Array(
+		    'protocol' => 'smtp',
+		    'smtp_host' => 'ssl://smtp.googlemail.com',
+		    'smtp_port' => 465,
+		    //'smtp_user' => 'dudhiyamurtaza165@gmail.com',
+		    //'smtp_pass' => 'dudhiya6596',
+		    'smtp_user'=>'jinal.rathod40@gmail.com',
+		    'smtp_pass'=>'782826782300',
+		    'mailtype'  => 'html',
+/*		    'ssl' => array(
+'verify_peer' => false,
+'verify_peer_name' => false,
+'allow_self_signed' => true
+)*/
  
 		    
-// 		     'charset'   => 'iso-8859-1'
-// 			);
-// 			$this->load->library('email',$config);
-// 		/*	$this->email->initialize($config);*/
-// 			/*$this->email->set_mailtype("html");*/
-// 			$this->email->set_newline("\r\n");
+		     'charset'   => 'iso-8859-1'
+			);
+			$this->load->library('email',$config);
+		/*	$this->email->initialize($config);*/
+			/*$this->email->set_mailtype("html");*/
+			$this->email->set_newline("\r\n");
 
-// 			//Email content
-// 			$htmlContent = '<h1>'.'APPROVAL for New product From</h1>';
-// 			$htmlContent .= '<p></p>';
+			//Email content
+			$htmlContent = '<h1>'.'APPROVAL for New product From '.$uname.'</h1><table>';
+			$htmlContent .= '<body style="font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; line-height: 26.3999996185303px; ">
+<div style="width:780px; height:auto; padding:20px; border:1px #ccc solid; background:#fcfcfc; margin:0 auto;">
+<h3 style="font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif; font-size: 20px;"> Product Details </h3>
+<hr/>
+<hr>
 
-// 			$this->email->to('dudhiyamurtaza165@gmail.com');
-// 			$this->email->from('sss');
-// 			$this->email->subject('APPROVAL for New product From');
-// 			$this->email->message($htmlContent);
+            <table cell-padding=5px; cell-spacing=5px; style="width:100%" >
+			<tr>
+			<th>Product Name</th>
+			<th>Buyer</th>
+			<th>Seller</th>
+			
+			</tr>
+			<tr>
+			<td>'.$pname.'</td>
+			<td>'.$uname.'</td>
+			<td>'.$detail[0]["seller_name"].'</td>
+			
+			</tr>
+			
+			</table>
+			<br>
+
+			</p></div></body>';
+
+			$this->email->to($config['smtp_user'],'harshal.borse9@gmail.com');
+			
+			$this->email->from($uname);
+			$this->email->subject('APPROVAL for New product From '.$uname);
+			$this->email->message($htmlContent);
 // $this->email->SMTPOptions = array(
 // 'ssl' => array(
 // 'verify_peer' => false,
@@ -275,17 +308,13 @@ class Salecontroller extends CI_Controller {
 // 'allow_self_signed' => true
 // )
 // );
-// 			//Send email
-// 			$this->email->send();
+			//Send email
+			$this->email->send();
 
-// echo $this->email->print_debugger();
-// 		 die();
+ $this->email->print_debugger();
+//		 die();
 
 
-
-		$uname=$this->session->userdata('username');
-		$uid=$this->session->userdata('id');
-		$utype=$this->session->userdata('type');
 		//print_r($this->input->post('id'));
 
 		$buyerdata['buyer']=$this->salemodel->buyerdetail($uid);
@@ -331,8 +360,6 @@ class Salecontroller extends CI_Controller {
 
 		 notification($data1);
 		 notification($data2);
-
-
 /*
 
 		 $config = Array(

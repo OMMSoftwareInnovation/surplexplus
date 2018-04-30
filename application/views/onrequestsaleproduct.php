@@ -63,7 +63,70 @@
 		opacity: 0.8;
 	}
 	</style>
-
+  <style type="text/css">
+	/* carousel */
+.media-carousel 
+{
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left 
+{
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 83px;
+}
+/* Next button  */
+.media-carousel .carousel-control.right 
+{
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 83px;
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+	.td
+	{
+		font-size: 12px;
+	    font-family: Verdana,Arial,Helvetica,sans-serif;
+	    font-weight: bold;
+	    width: 250px;
+	    padding: 6px;
+	}
+/* End carousel */
+</style>
  <div class="main">
     <div class="content">
 
@@ -212,116 +275,14 @@
     		</div>
     		<div class="clear"></div>
     	</div>
-   <style type="text/css">
-	/* carousel */
-.media-carousel 
-{
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px;
-  margin-top: 30px;
-}
-/* Previous button  */
-.media-carousel .carousel-control.left 
-{
-  left: -12px;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 83px;
-}
-/* Next button  */
-.media-carousel .carousel-control.right 
-{
-  right: -12px !important;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 83px;
-}
-/* Changes the position of the indicators */
-.media-carousel .carousel-indicators 
-{
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.media-carousel .carousel-indicators li 
-{
-  background: #c0c0c0;
-}
-.media-carousel .carousel-indicators .active 
-{
-  background: #333333;
-}
-.media-carousel img
-{
-  width: 250px;
-  height: 100px
-}
-	.td
-	{
-		font-size: 12px;
-	    font-family: Verdana,Arial,Helvetica,sans-serif;
-	    font-weight: bold;
-	    width: 250px;
-	    padding: 6px;
-	}
-/* End carousel */
-</style>
+ 
 <div class="section group">
 <div class="container">
   <div class='row'>
     <div class='col-md-8' style="width: 89%;">
       <div class="carousel slide media-carousel" id="media">
         <div class="carousel-inner">
-          <!-- <div class="item  active">
-            <div class="row">
-				<div class="grid_1_of_4 images_1_of_4">
-				 <img src="<?php echo base_url(); ?>assets/images/pic3.jpg" alt="">
-					 <div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Purchase</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				 <img src="<?php echo base_url(); ?>assets/images/pic3.jpg" alt="">
-					 <div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Purchase</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				 <img src="<?php echo base_url(); ?>assets/images/pic3.jpg" alt="">
-					 <div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Purchase</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				 <img src="<?php echo base_url(); ?>assets/images/pic3.jpg" alt="">
-					 <div class="price" style="border:none">
-					       		<div class="add-cart" style="float:none">								
-									<h4><a href="#">Purchase</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-            </div>
-          </div> -->
+          
           <?php
                   $cnt=0;
                   $abc="";
@@ -351,10 +312,12 @@
                 <?php
                     }
                  ?>
+
+                 <!-- related product -->
                   <div class="grid_1_of_4 images_1_of_4" style="margin-left: 150px;">
                 
             	 <img src="<?php echo base_url(); ?>files/thumbnail/<?php echo $relateddata[0]['product_main_img'] ?>" alt=" ">
-				 <h4><?php echo $relateddata[$i]['product_name']; ?></h4>
+				 <h4><?php echo substr($relateddata[$i]['product_name'],0,15).'...'; ?></h4>
 					 <div class="price" style="border:none">
 					       		<div class="add-cart" style="float:none">								
 									<h4 ><a href="#">View</a></h4>

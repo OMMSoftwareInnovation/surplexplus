@@ -19,7 +19,7 @@ class Auctioncontroller extends CI_Controller {
 		$auction['auctions'] = $this->auctionmodel->liveauctions();
 	    $cnt=0;				
 
-	    print_r($auction);die;
+	    //print_r($auction);die;
 	    for ($i=0; $i <count($auction['auctions']) ; $i++)
 	    {
 			$tt=explode(",", $auction['auctions'][$i]['id']);
