@@ -106,10 +106,14 @@ class Auctioncontroller extends CI_Controller {
             $data=array();
 	    for ($i=0; $i <count($auction['auctions']) ; $i++)
 	    {
-			$tt=explode(",", $auction['auctions'][$i]['id']);
+			 $tt=explode(",", $auction['auctions'][$i]['id']);
+			
 			$aa=1;
+		//	echo count($tt);
+		//	print_r($tt);
 			if(count($tt)>= 2)
 			{  
+
 				  //$cnt++;
 				foreach ($tt as $key )
 				{
@@ -126,7 +130,7 @@ class Auctioncontroller extends CI_Controller {
 			{
 				$data[$cnt]['1']=$auction['auctiondata'] = $this->auctionmodel->auctiondata($tt[0]);
 				$data[$cnt]['0']=$auction['auctiondata'][0]['auction_ed_time'];
-				
+				print_r($auction['auctiondata'][0]['auction_ed_time']);
 				$cnt++;
 			}
 	    }
@@ -134,8 +138,8 @@ class Auctioncontroller extends CI_Controller {
 	  
              $dt['dt'][1]=$data;
 		// print_r($auction['auctions']);
-		// //print_r($dt);
-		// die();
+		print_r($dt);
+		 // die();
 
 		$this->load->view('header');
 		$this->load->view('closedauctions',$dt);

@@ -97,7 +97,8 @@ class Auctionmodel extends CI_Model
         $this->db->join('surplex_auction_item', 'surplex_auction_item.auction_id = surplex_auction.auction_id');
         $this->db->GROUP_BY('surplex_auction_item.auction_id');
         $query = $this->db->get();
-        return $query->result_array();
+      return  $query->result_array();
+    
     }
 
     function aucitem($aid)

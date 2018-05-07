@@ -221,6 +221,7 @@ class Salemodel extends CI_Model
         $this->db->where('product_id',$id);
         $query = $this->db->get();
         return $query->result_array();
+
     }
 
 
